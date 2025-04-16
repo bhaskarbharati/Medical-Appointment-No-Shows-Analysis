@@ -4,7 +4,7 @@ This project analyzes a real-world dataset of over 100,000 medical appointments 
 
 ---
 
-## ⚙️ Tools & Technologies Used
+## Tools & Technologies Used
 
 - **Python** (pandas, numpy)
 - **Data Visualization:** matplotlib, seaborn
