@@ -52,6 +52,7 @@ This project explores a real-world dataset of over 100,000 medical appointments 
 ## Dashboard Preview
 
 ![Excel Dashboard Preview](Dashboard.png)
+
 ---
 
 ## Key Metrics
