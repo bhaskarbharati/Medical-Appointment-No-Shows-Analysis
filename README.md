@@ -1,6 +1,6 @@
 # Medical Appointment No-Shows Analysis (Excel-Based)
 
-This project explores a real-world dataset of over 100,000 medical appointments in Brazil to understand the factors behind patients missing their scheduled visits. Missed appointments cause inefficiencies and financial losses in healthcare. Using **Microsoft Excel**, this project applies data cleaning, pivot analysis, KPIs, and dashboards to provide actionable insights.
+This project explores a real-world dataset of over 100,000 medical appointments to understand the factors behind patients missing their scheduled visits. Missed appointments cause inefficiencies and financial losses in healthcare. Using **Microsoft Excel**, this project applies data cleaning, pivot analysis, KPIs, and dashboards to provide actionable insights.
 
 ---
 
@@ -51,7 +51,19 @@ This project explores a real-world dataset of over 100,000 medical appointments 
 
 ---
 
-##  Insights
+## Key Metrics
+
+- **No-show rate without SMS**: ~75%
+- **No-show rate with SMS**: ~15%
+- **Same-day appointment no-show**: ~49%
+- **Long-wait (>5 days) no-show**: ~13.5%
+- **Moderate wait (3–5 days) show-up rate**: Highest
+- **Scholarship patients no-show rate**: ~79%
+- **Top neighborhoods by no-shows**: Jardim Camburi, Maria Ortiz, Resistência
+
+---
+
+## Insights
 
 - Higher no-show rates seen among:
   - Patients with **same-day** or **long waiting periods**
@@ -88,9 +100,9 @@ To support clinics and hospitals in **reducing appointment no-shows** by:
 
 ---
 
-##  Files Included
+## Files Included
 
-- `Medical_NoShow_Analysis.xlsx` – Main Excel file with:
+- `Medical-NoShow-Analysis-Bhaskar.xlsx` – Main Excel file with:
   - Raw & Cleaned Data (separate sheets)
   - Pivot Tables
   - Dashboard Sheet
@@ -98,7 +110,7 @@ To support clinics and hospitals in **reducing appointment no-shows** by:
 
 ---
 
-## Author
+##  Author
 
 **Bhaskar Bharati**  
 📧 [vaskarv959@gmail.com](mailto:vaskarv959@gmail.com)  
@@ -106,4 +118,4 @@ To support clinics and hospitals in **reducing appointment no-shows** by:
 
 ---
 
-**If you found this helpful, consider starring the repo!**
+ **If you found this helpful, consider starring the repo!**
