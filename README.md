@@ -1,77 +1,115 @@
-# Medical Appointment No-Shows Prediction
+# Medical Appointment No-Shows Analysis (Excel-Based)
 
-This project analyzes a real-world dataset of over 100,000 medical appointments in Brazil to predict whether a patient will show up for their scheduled appointment. Missed appointments can lead to operational inefficiencies and increased healthcare costs. By leveraging data analysis and machine learning, this project aims to uncover patterns in patient behavior and provide insights to reduce no-shows.
+This project explores a real-world dataset of over 100,000 medical appointments in Brazil to understand the factors behind patients missing their scheduled visits. Missed appointments cause inefficiencies and financial losses in healthcare. Using **Microsoft Excel**, this project applies data cleaning, pivot analysis, KPIs, and dashboards to provide actionable insights.
 
 ---
 
 ## Tools & Technologies Used
 
-- **Python** (pandas, numpy)
-- **Data Visualization:** matplotlib, seaborn
-- **Machine Learning:** scikit-learn (Logistic Regression, Random Forest, etc.)
-- **SQL (DuckDB)** – for optional SQL-style queries
-- **Jupyter Notebook**
+- **Microsoft Excel**
+  - Data Cleaning (Text to Columns, Date Formatting)
+  - Formulas (`IF`, `IFS`, `COUNTIF`, `DATEDIF`, etc.)
+  - Pivot Tables
+  - Conditional Formatting
+  - Data Visualization (Bar Charts, Pie Charts, Line Graphs)
+  - Slicers and Filters
+  - Dashboard Creation
 
 ---
 
 ## Dataset
 
-- **Source:** [Kaggle - Medical Appointment No Shows](https://www.kaggle.com/datasets/joniarroba/noshowappointments)
-- Contains features like:
-  - Patient demographics (age, gender, neighborhood)
-  - Scheduled and appointment dates
-  - Health conditions (diabetes, hypertension)
-  - SMS reminders
-  - Target variable: `No-show` (Yes/No)
+- **Source**: [Kaggle - Medical Appointment No Shows](https://www.kaggle.com/datasets/joniarroba/noshowappointments)
+- **Features include**:
+  - Patient Demographics: `Age`, `Gender`, `Neighborhood`
+  - Appointment Details: `Scheduled Day`, `Appointment Day`
+  - Health Conditions: `Diabetes`, `Hypertension`, `Alcoholism`
+  - SMS Reminder: `SMS_received`
+  - **Target Variable**: `No-show` (Yes/No)
 
 ---
 
-## Project Workflow
+## Workflow
 
-1. **Data Cleaning**
-   - Handled date formatting, column renaming, and missing values
-   - Encoded categorical variables
+### 1. Data Cleaning
+- Removed duplicates and invalid records (e.g., negative ages)
+- Cleaned `DateTime` formats (removed time component)
+- Created new columns:
+  - `Days_Waited` = `AppointmentDay - ScheduledDay`
+  - `Is_Weekend` = Flag for weekend appointments
 
-2. **Exploratory Data Analysis (EDA)**
-   - Analyzed attendance trends by age, gender, health conditions, SMS reminders
-   - Created new features like `days_between_scheduling` and `is_weekend`
+### 2. Exploratory Data Analysis (EDA)
+- Used **Pivot Tables** to explore:
+  - Show/No-show rates by `Gender`, `Age Group`, `Weekday`, `SMS_received`
+  - Average waiting time by show status
+  - No-show trends by week or region
 
-3. **Feature Engineering**
-   - Created meaningful input features for modeling
-   - Checked feature correlation and importance
-
-4. **Modeling**
-   - Trained classification models: Logistic Regression, Random Forest
-   - Evaluated using Accuracy, Precision, Recall, and Confusion Matrix
-
-5. **Business Insight**
-   - Identified top factors influencing no-shows (e.g., long scheduling gaps, missed SMS)
-   - Suggested strategies to reduce appointment no-shows
+### 3. KPIs & Dashboard
+- Key Metrics:
+  - Total Appointments
+  - Total No-shows
+  - No-show Rate %
+  - Show-up Ratio by SMS, Day, and Gender
+- Created an **interactive Excel dashboard** with:
+  - Slicers for dynamic filtering
+  - KPI cards
+  - Visual charts and summaries
 
 ---
 
-## Visualizations
-- No-show rates by age, SMS received, and appointment weekday
-- Distribution plots of scheduling gaps
-- Feature importance (bar charts)
+##  Insights
+
+- Higher no-show rates seen among:
+  - Patients with **same-day** or **long waiting periods**
+  - Patients who **did not receive SMS reminders**
+  - **Adults** and those from certain **neighborhoods**
+  - **Scholarship patients** despite financial support
+
+- **SMS reminders** significantly improve attendance
+
+---
+
+### ecommendations
+
+- Send **SMS reminders** consistently  
+- Avoid **same-day** or **long-delay** appointments  
+- Prioritize **high-risk patients** on mid-week days (e.g., Tuesday/Wednesday)  
+- Investigate and address **low-attendance neighborhoods**
 
 ---
 
 ## Project Goal
 
-To support hospitals and clinics in reducing missed appointments by predicting at-risk patients and improving communication or scheduling strategies through data.
+To support clinics and hospitals in **reducing appointment no-shows** by:
+- Identifying key behavioral and scheduling patterns
+- Offering Excel-based dashboards and reports for operational use
 
 ---
 
-## Status
+## Project Status
 
-  In Progress – EDA, Feature Engineering, and Baseline Modeling Complete  
-  Upcoming – Model optimization, visualization improvements, and deployment planning
+- Data Cleaning Completed  
+- Pivot Table EDA Done  
+- Dashboard Created  
 
 ---
 
-## Contact
+##  Files Included
+
+- `Medical_NoShow_Analysis.xlsx` – Main Excel file with:
+  - Raw & Cleaned Data (separate sheets)
+  - Pivot Tables
+  - Dashboard Sheet
+  - Calculated Fields and KPIs
+
+---
+
+## Author
 
 **Bhaskar Bharati**  
-📧 Email: [vaskarv959@gmail.com]  
-🔗 LinkedIn: [https://www.linkedin.com/in/bhaskar-bharati/]  
+📧 [vaskarv959@gmail.com](mailto:vaskarv959@gmail.com)  
+🔗 [LinkedIn: bhaskar-bharati](https://www.linkedin.com/in/bhaskar-bharati/)
+
+---
+
+**If you found this helpful, consider starring the repo!**
