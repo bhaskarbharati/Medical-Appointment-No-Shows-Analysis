@@ -46,7 +46,6 @@ This project explores a real-world dataset of over 100,000 medical appointments 
 ### 3. Dashboard
 - Created an **interactive Excel dashboard** with:
   - Slicers for dynamic filtering
-  - KPI cards
   - Visual charts and summaries
 
 ## Dashboard Preview
