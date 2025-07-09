@@ -49,6 +49,9 @@ This project explores a real-world dataset of over 100,000 medical appointments 
   - KPI cards
   - Visual charts and summaries
 
+## Dashboard Preview
+
+![Excel Dashboard Preview](Dashboard.png)
 ---
 
 ## Key Metrics
