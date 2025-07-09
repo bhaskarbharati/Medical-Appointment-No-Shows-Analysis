@@ -108,7 +108,8 @@ To support clinics and hospitals in **reducing appointment no-shows** by:
   - Dashboard Sheet
   - Calculated Fields and KPIs
 
-**Due to GitHub's file size limit (25MB), the Excel file is hosted externally:**  
+⚠️ **Note**: Due to limitations in Google Drive's preview, slicers, interactivity, and dashboard visuals may not display correctly online.  
+To explore the full dashboard experience, please **download the Excel file** and open it with **Microsoft Excel Desktop**.
 🔗 [Download Excel Dashboard from Google Drive](https://docs.google.com/spreadsheets/d/18pEgtIarzOStot1WFO0SweHFv39uYU2t/edit?gid=2044042214#gid=2044042214)
 
 
