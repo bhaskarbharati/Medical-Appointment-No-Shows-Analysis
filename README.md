@@ -43,7 +43,7 @@ This project explores a real-world dataset of over 100,000 medical appointments 
   - Average waiting time by show status
   - No-show trends by week or region
 
-### 3. KPIs & Dashboard
+### 3. Dashboard
 - Created an **interactive Excel dashboard** with:
   - Slicers for dynamic filtering
   - KPI cards
@@ -63,7 +63,7 @@ This project explores a real-world dataset of over 100,000 medical appointments 
 
 ---
 
-### ecommendations
+### Recommendations
 
 - Send **SMS reminders** consistently  
 - Avoid **same-day** or **long-delay** appointments  
