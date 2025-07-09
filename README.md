@@ -36,20 +36,14 @@ This project explores a real-world dataset of over 100,000 medical appointments 
 - Cleaned `DateTime` formats (removed time component)
 - Created new columns:
   - `Days_Waited` = `AppointmentDay - ScheduledDay`
-  - `Is_Weekend` = Flag for weekend appointments
 
 ### 2. Exploratory Data Analysis (EDA)
 - Used **Pivot Tables** to explore:
-  - Show/No-show rates by `Gender`, `Age Group`, `Weekday`, `SMS_received`
+  - Show/No-show rates by `Gender`, `Age Group`, `SMS_received`
   - Average waiting time by show status
   - No-show trends by week or region
 
 ### 3. KPIs & Dashboard
-- Key Metrics:
-  - Total Appointments
-  - Total No-shows
-  - No-show Rate %
-  - Show-up Ratio by SMS, Day, and Gender
 - Created an **interactive Excel dashboard** with:
   - Slicers for dynamic filtering
   - KPI cards
